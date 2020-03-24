@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         yData = findViewById(R.id.yData);
         zData = findViewById(R.id.zData);
 
-        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        sensorManager = getSystemService(SensorManager.class);
 
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
